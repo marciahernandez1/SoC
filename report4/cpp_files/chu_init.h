@@ -96,9 +96,13 @@ void debug_on(const char *str, int n1, int n2);
 
 #ifndef _DEBUG
 #define debug(str, n1, n2) debug_off()
-#endif // not _DEBUG#ifdef _DEBUG
+#endif // not _DEBUG
+
+#ifdef _DEBUG
 #define debug(str, n1, n2) debug_on((str), (n1), (n2))
-#endif // not _DEBUG#ifdef __cplusplus
+#endif // not _DEBUG
+
+#ifdef __cplusplus
 } // extern "C"
 #endif
 
@@ -113,4 +117,4 @@ void debug_on(const char *str, int n1, int n2);
 #define bit_write(data, n, bitvalue) (bitvalue ? bit_set((data), n) : bit_clear((data), n))
 #define bit(n) (1UL << (n))
 
-#endif  // _CHU_INIT_H_INCLUDED
+#endif  // _CHU_INIT_H_INCLUDED
