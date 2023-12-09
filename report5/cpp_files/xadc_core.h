@@ -73,4 +73,4 @@ private:
 }
 ;
 
-#endif  // _XADC_CORE_H_INCLUDED
+#endif  // _XADC_CORE_H_INCLUDED
