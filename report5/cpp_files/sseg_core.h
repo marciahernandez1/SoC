@@ -80,4 +80,4 @@ private:
 }
 ;
 
-#endif  // _SSEG_CORE_H_INCLUDED
+#endif  // _SSEG_CORE_H_INCLUDED
